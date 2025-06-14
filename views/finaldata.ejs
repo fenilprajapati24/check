@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h2>your data has been submited fenil</h2>
+
+  <ul class="space-y-4">
+    <% registeredhome.forEach(home => { %>
+      <li class="bg-gray-100 p-4 rounded-lg shadow-md hover:shadow-lg transition duration-300">
+        <span class="text-lg text-gray-800">
+          name:<%= home.name %>|
+          age:<%=home.age%>|
+          price:<%=home.price%>
+        
+        </span>
+      </li>
+    <% }) %>
+
+  </ul>
+    <a href="/">home</a>
+
+</body>
+</html>
